@@ -7,6 +7,9 @@ import pygame
 
 
 class Ship:
+    """
+    Creates the ship.
+    """
     def __init__(self, screen):
         """
         Initialize ship and set starting position.
