@@ -59,10 +59,11 @@ def update_screen(ai_settings, screen, ship, bullets):
     """
     screen.fill(ai_settings.bg_color)
     ship.blitme()
-    pygame.display.flip()
 
     for bullet in bullets.sprites():
         bullet.draw_bullet()
+
+    pygame.display.flip()
 
 
 def update_bullets(bullets):

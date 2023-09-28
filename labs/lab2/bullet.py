@@ -16,7 +16,7 @@ class Bullet(Sprite):
         """
         Create bullet at ship's position
         """
-        super().__init__()
+        super(Bullet, self).__init__()
         self.screen = screen
 
         # Create bullet at 0,0 then set pos
