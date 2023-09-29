@@ -1,19 +1,16 @@
 ### Reflection
 
 * What programming concepts and techniques were completely new to you? 
-  * _Drawing visuals on screen using rectangles is still the only completely new concept for me._
+  * _None at this point._
 * Were there roadblocks or issues you needed to spend more time or seek help with? How did you overcome those?
-  * _One issue I had was that the ship image appeared huge on screen and I couldn't figure out how to make it smaller.
-    What I ended up doing was putting it in an image resizer and literally shrinking the image size that way._
+  * _The only issue I had this time was finding the alien image, which I couldn't. So I just used a random one from GitHub._
 * What aspect are you interested in learning more about or becoming more proficient with?
-  * _I would like to create more projects where we segment the code into different files like this. I feel like I need
-  a better understanding of referencing class methods from another file._
+  * _I feel like I would like to learn more about the actual pygame module because its kind of a blackbox to me._
 * Conclude your reflection with thoughts about the overall experience: 
 * How long did it take? Did you do it all at once, or you spaced it out?
-  * _It took me about an hour to complete, so I did it all in one sitting again._
+  * _It only took an hour, did it in one sitting as usual._
 * Think of one lesson learned about yourself as a learner and/or computing professional:
-  * _Something I noticed is that while I was following the instructions, I was always thinking of "How could I do this
-  better? Realistically, it was pretty hard to imagine that since most of the code is referencing the pygame package
-  which I have no experience using personally._
+  * _I'm starting to find out that I really dislike following exact coding directions like this. It's kind of mind
+  numbing in a way haha._
 
 
