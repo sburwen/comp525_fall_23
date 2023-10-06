@@ -7,6 +7,15 @@
 
 ### extend() function
 * Take `num_list` and `another_num_list` as inputs. Goal is to create a new list with the 2nd list added after the 1st.
+* Initialize `new_list` as list equal to `num_list`.
 * Begin for loop which iterates using `i` for items in `another_num_list`.
-  * Inside for loop, append `i` to `num_list`
-* After loop, return `num_list`
+  * Inside for loop, append `i` to `new_list`.
+* After loop, return `new_list`.
+
+### remove() function
+* Take `num_list` and `num` as inputs. Goal is to remove instances of `num` from `num_list`.
+* Initialzie `new_list` as empty list.
+* Begin for loop iterating using `i` for items in `num_list`.
+  * Inside for loop, if `i` does not equal `num`, append it to `new_list`.
+  * Else pass.
+* After loop, return `new_list`.
