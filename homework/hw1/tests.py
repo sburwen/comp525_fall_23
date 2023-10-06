@@ -5,6 +5,7 @@ Date: 10/6/2023
 """
 import my_list
 
+
 def count_test():
     """
     Test inputs for count() function
