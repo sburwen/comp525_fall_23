@@ -45,4 +45,11 @@ def remove_test():
     Test inputs for remove() function
     :return: list of integers, with num removed
     """
+    # Expected output [4, 6, 15, 15, 22, 34, 65, 71]:
+    print(my_list.remove(test_list2, 49))
 
+    # Expected output [6, 15, 15, 22, 34, 49, 49, 65, 71]:
+    print(my_list.remove(test_list2, 4))
+
+    # Expected output [4, 6, 15, 15, 22, 34, 49, 49, 65, 71]:
+    print(my_list.remove(test_list2, 2))
