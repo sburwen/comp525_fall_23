@@ -53,3 +53,26 @@ def remove_test():
 
     # Expected output [4, 6, 15, 15, 22, 34, 49, 49, 65, 71]:
     print(my_list.remove(test_list2, 2))
+
+
+def index_test():
+    """
+    Test inputs for index() function
+    :return: non-negative integer of the index of the first occurrent of
+    `num`
+    :return: None, if `num` not found
+    """
+    # Expected output 8:
+    print(my_list.index(test_list1, 76))
+
+    # Expected output 3:
+    print(my_list.index(test_list1, 12))
+
+    # Expected output None:
+    print(my_list.index(test_list1, 109))
+
+
+count_test()
+extend_test()
+remove_test()
+index_test()
