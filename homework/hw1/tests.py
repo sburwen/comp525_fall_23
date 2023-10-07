@@ -33,8 +33,7 @@ def extend_test():
     # Expected output [3, 8, 9, 12, 24, 24, 31, 52, 76, 76, 99, 108, 4, 6, 15, 15, 22, 34, 49, 49, 65, 71]:
     print(F"Extend Test 1: {my_list.extend(test_list1, test_list2)}")
 
-    # Expected output [3, 8, 9, 12, 24, 24, 31, 52, 76, 76, 99, 108, 4, 6, 15, 15, 22, 34, 49, 49, 65, 71, 0,
-    # 1, 2, 3, 4, 5]:
+    # Expected output [3, 8, 9, 12, 24, 24, 31, 52, 76, 76, 99, 108, 0, 1, 2, 3, 4, 5]:
     print(F"Extend Test 2: {my_list.extend(test_list1, test_list3)}")
 
     # Expected output [4, 6, 15, 15, 22, 34, 49, 49, 65, 71, 0, 1, 2, 3, 4, 5]:
