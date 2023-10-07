@@ -19,3 +19,13 @@
   * Inside for loop, if `i` does not equal `num`, append it to `new_list`.
   * Else pass.
 * After loop, return `new_list`.
+
+### index() function
+* Take `num_list` and `num` as inputs. Goal is to find index of `num`.
+* Initialize local variable `counter` to `0`.
+* Initialize local variable `flag` to `0`.
+* Begin for loop which iterates using `i` for length of the list.
+  * If `i` is equal to `num`, break and set flag to 1.
+    * Else increase counter by `1`.
+* After loop, if `flag` is equal to `0`, set `counter` equal to `None`
+* Return `counter`.
