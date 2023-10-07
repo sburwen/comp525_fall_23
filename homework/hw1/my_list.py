@@ -31,6 +31,10 @@ def extend(num_list, another_num_list):
     :param another_num_list: list of integers
     :return: list of integers
     """
+    new_list = num_list[:]
+    for i in another_num_list:
+        new_list.append(i)
+    return new_list
 
 
 def remove(num_list, num):
