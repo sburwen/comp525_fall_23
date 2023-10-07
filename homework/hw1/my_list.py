@@ -45,6 +45,11 @@ def remove(num_list, num):
     :param num: integer
     :return: list of integers
     """
+    new_list = []
+    for i in num_list:
+        if i != num:
+            new_list.append(i)
+    return new_list
 
 
 def index(num_list, num):
