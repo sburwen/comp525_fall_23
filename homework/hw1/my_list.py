@@ -61,3 +61,14 @@ def index(num_list, num):
     `num`
     :return: None, if `num` not found
     """
+    counter = 0
+    flag = 0
+    for i in num_list:
+        if i == num:
+            flag = 1
+            break
+        else:
+            counter += 1
+    if flag == 0:
+        counter = None
+    return counter
