@@ -16,6 +16,11 @@ def count(num_list, num):
     :param num: integer
     :return: integer, representing how many times `num` is in `num_list`
     """
+    counter = 0
+    for i in num_list:
+        if i == num:
+            counter += 1
+    return counter
 
 
 def extend(num_list, another_num_list):
