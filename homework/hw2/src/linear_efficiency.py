@@ -26,7 +26,7 @@ def hide(sentence):
     :return: empty string or 1-charcter string identical with `sentence` if
         `sentence` is empty string or 1-character string
     Example 1: hide('babble') returns 'ba**le'
-    Example 2: hide('more is less') returns 'more is*l*s*'
+    Example 2: hide('more is less') returns 'more is*l***'
     """
     found_chars = {}
     count = 0
