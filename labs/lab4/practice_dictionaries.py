@@ -1,9 +1,7 @@
 """
 practice_dictionaries.py
-Get familiar with dictionaries
-Mihaela Sabin
-Created March 20, 2019
-Updated October 16, 2019; February 19, 2020
+Sean Burwen
+Updated 11/2/2023
 """
 
 
@@ -21,18 +19,27 @@ class Practice(object):
         Returns: string with season names and descriptions and no spaces or
             other characters in between
         """
-        pass
+        ugly_string = ""
+        for season, desc in season_dict.items():
+            ugly_string = ugly_string + season + desc
+        ugly_string = ugly_string.replace(" ", "")
+        return ugly_string
 
     def update_inventory(self, inventory_dict, quantity_added):
         """
-        Returns new dictionary with quanties for each itmem in inveentory_dict
+        Returns new dictionary with quanties for each itmem in inventory_dict
             increased by quantity-added
         inventory_dict: dictionary
             keys: strings - inventory item names
             values: int - inventory quantity of item
         Returns: dictionry
         """
-        pass
+        new_dict = {}
+        for item in inventory_dict.keys():
+            current = inventory_dict[item]
+            new_dict[item] = current + quantity_added
+        return new_dict
+
 
 if __name__ == '__main__':
     p = Practice()

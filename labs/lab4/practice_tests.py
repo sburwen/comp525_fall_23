@@ -1,11 +1,11 @@
 """
 test_parse_season.py
-Mihaela
-Created March 20, 2019. Updated October 15, 2019
+Sean Burwen
+Updated 11/2/23
 """
 
 import unittest
-from .practice_dictionaries import Practice
+from practice_dictionaries import Practice
 
 
 class TestParseSeasons(unittest.TestCase):
@@ -30,6 +30,25 @@ class TestParseSeasons(unittest.TestCase):
         }
         actual_result = self.p.parse_seasons(input1)
         expected_result = 'springwarmsummerhotfalljustrightwintercold'
+        self.assertEqual(actual_result, expected_result)
+
+    def test_inventory_add(self):
+        """
+        test case for update inventory
+        """
+        input1 = {
+            'milk': 37,
+            'eggs': 26,
+            'bread': 15,
+            'cheese': 12
+        }
+        actual_result = self.p.update_inventory(input1, 10)
+        expected_result = {
+            'milk': 47,
+            'eggs': 36,
+            'bread': 25,
+            'cheese': 22
+        }
         self.assertEqual(actual_result, expected_result)
 
 
