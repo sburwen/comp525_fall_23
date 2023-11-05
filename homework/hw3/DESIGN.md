@@ -15,3 +15,8 @@
   property of `curr_node` to `new_node`
   * Break out of the loop
 * Set the current node to its `get_next` property
+### pop(self) function
+* If head is `None`: return `None`
+* Else, set `value` to head's `data` property
+  * Set head to its `next` property
+  * Return `value`
