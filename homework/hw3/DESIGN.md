@@ -20,3 +20,12 @@
 * Else, set `value` to head's `data` property
   * Set head to its `next` property
   * Return `value`
+### remove(self, item) function
+* Initialize variable `curr_node` to head
+* Initialize variable `prev_node` to head
+* Begin loop while `curr_node` is not `None`
+  * If `curr_node`'s data is equal to `item`: enter conditional
+    * If `curr_node` is equal to head: set head equal to `curr_node`'s next property and return `item`
+    * Else, set `prev_node`'s next property to `curr_node`'s next property and return `item`
+  * Outside of conditional, set `prev_node` equal to `curr_node`, then set `curr_node` equal to its next property
+* Return `self.head`
