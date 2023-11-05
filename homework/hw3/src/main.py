@@ -45,6 +45,14 @@ def test_search():
     Use code in test_prepend() to create the list 6, 3, 7.
     Call search(7) and search(10) to test the full behavior of the method.
     """
+    ul_obj = UnorderedList()
+
+    # Use `prepend()` three times with arguments 7, 3, 6
+    ul_obj.prepend(7)
+    ul_obj.prepend(3)
+    ul_obj.prepend(6)
+    search = ul_obj.search(3)
+    print(search)
 
 
 def test_print():
@@ -52,7 +60,14 @@ def test_print():
     Use code in test_prepend() to create the list 6, 3, 7.
     Call print() to test __str__() method.
     """
+    ul_obj = UnorderedList()
 
+    # Use `prepend()` three times with arguments 7, 3, 6
+    ul_obj.prepend(7)
+    ul_obj.prepend(3)
+    ul_obj.prepend(6)
+    testprint = ul_obj.__str__()
+    print(testprint)
 
 def test_append():
     """
@@ -80,6 +95,9 @@ def main():
     Test UnorderedList methods with simple test cases.
     """
     test_prepend()
+    test_size()
+    test_search()
+    test_print()
     # Call the testing functions here.
     # As you add a call to a new testing function, comment out the ones
     # that have been called already. Do NOT delete any of the calls.

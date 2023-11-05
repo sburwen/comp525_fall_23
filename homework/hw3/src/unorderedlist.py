@@ -6,6 +6,7 @@ Jon Shallow
 
 from node import Node
 
+
 class UnorderedList:
     """
     Class representation of an UnorderedList
@@ -59,7 +60,6 @@ class UnorderedList:
             curr_node = curr_node.get_next()
         return False
 
-
     def __str__(self):
         """
         Create string representation of the unordered list object. The string
@@ -67,7 +67,15 @@ class UnorderedList:
         string is empty string.
         :return: string
         """
-        pass
+        ul_str = ""
+        curr_node = self.head
+        while curr_node:
+            if curr_node.get_next() is None:
+                ul_str = ul_str + str(curr_node.get_data())
+            else:
+                ul_str = ul_str + str(curr_node.get_data()) + ", "
+            curr_node = curr_node.get_next()
+        return ul_str
 
     def append(self, item):
         # Appending happens at the end of the unsorted list.
