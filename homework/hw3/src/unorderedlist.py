@@ -1,7 +1,7 @@
 """
 unorderedlist.py
-Jon Shallow
-20231102
+Sean Burwen
+11/5/2023
 """
 
 from node import Node
@@ -109,7 +109,24 @@ class UnorderedList:
             return value
 
     def remove(self, item):
+        """
+        Remove specific node/element containing item in unordered list and return item
+        :param item: integer
+        :return: integer, head object
+        """
         # If the item is removed successfully, return the item.
         # Otherwise, return the `self._head`.
         # Replace these comments with a well-formed docstring.
-        pass
+        curr_node = self.head
+        prev_node = self.head
+        while curr_node:
+            if curr_node.get_data() == item:
+                if curr_node == self.head:
+                    self.head = curr_node.get_next()
+                    return item
+                else:
+                    prev_node.set_next(curr_node.get_next())
+                    return item
+            prev_node = curr_node
+            curr_node = curr_node.get_next()
+        return self.head
