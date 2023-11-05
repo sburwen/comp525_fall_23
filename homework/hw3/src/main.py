@@ -69,11 +69,18 @@ def test_print():
     testprint = ul_obj.__str__()
     print(testprint)
 
+
 def test_append():
     """
     Create an empty unordered list object.
     Call append(7) and append(3) to test the method.
     """
+    ul_obj = UnorderedList()
+
+    ul_obj.append(7)
+    ul_obj.append(3)
+    ul_obj.append(6)
+    print(ul_obj.__str__())
 
 
 def test_pop():
@@ -98,6 +105,7 @@ def main():
     test_size()
     test_search()
     test_print()
+    test_append()
     # Call the testing functions here.
     # As you add a call to a new testing function, comment out the ones
     # that have been called already. Do NOT delete any of the calls.
