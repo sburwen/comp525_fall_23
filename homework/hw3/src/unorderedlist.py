@@ -97,12 +97,16 @@ class UnorderedList:
                 curr_node = curr_node.get_next()
 
     def pop(self):
-        # Popping happens at the front of the unsorted list.
-        # If popping is successful, the method removes the 1st node and
-        # returns the data item in the node. Otherwise, the method returns
-        # None.
-        # Replace these comments with a well-written docstring.
-        pass
+        """
+        Remove first node/element in unordered list and return its data property
+        :return: integer
+        """
+        if self.head is None:
+            return None
+        else:
+            value = self.head.get_data()
+            self.head = self.head.get_next()
+            return value
 
     def remove(self, item):
         # If the item is removed successfully, return the item.

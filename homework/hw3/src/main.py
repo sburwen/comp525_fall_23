@@ -88,7 +88,16 @@ def test_pop():
     Use code in test_append() to create the list 7, 3
     Call pop(7) and pop(10) to test the full behavior of the method.
     """
+    ul_obj = UnorderedList()
 
+    ul_obj.append(7)
+    ul_obj.append(3)
+    ul_obj.append(6)
+
+    print(ul_obj.pop())
+    print(ul_obj.pop())
+    print(ul_obj.pop())
+    print(ul_obj.pop())
 
 def test_remove():
     """
@@ -106,6 +115,7 @@ def main():
     test_search()
     test_print()
     test_append()
+    test_pop()
     # Call the testing functions here.
     # As you add a call to a new testing function, comment out the ones
     # that have been called already. Do NOT delete any of the calls.
