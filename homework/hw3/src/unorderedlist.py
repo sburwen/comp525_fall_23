@@ -78,9 +78,23 @@ class UnorderedList:
         return ul_str
 
     def append(self, item):
-        # Appending happens at the end of the unsorted list.
-        # Replace these comments with a well-formed docstring.
-        pass
+        """
+        Create node that has item and make it the last element in the
+        unordered list.
+        :param item: integer
+        """
+        new_node = Node(item)
+        curr_node = self.head
+        if curr_node is None:
+            new_node.set_next(None)
+            self.head = new_node
+        else:
+            while curr_node:
+                if curr_node.get_next() is None:
+                    new_node.set_next(None)
+                    curr_node.set_next(new_node)
+                    break
+                curr_node = curr_node.get_next()
 
     def pop(self):
         # Popping happens at the front of the unsorted list.
